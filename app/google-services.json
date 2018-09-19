@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "138751974185",
+    "firebase_url": "https://maitry-f7bd2.firebaseio.com",
+    "project_id": "maitry-f7bd2",
+    "storage_bucket": "maitry-f7bd2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138751974185:android:2953e99d209f8004",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.maitry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138751974185-r23cnpolck3g3sstj5ianhc454ip9rf3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.maitry",
+            "certificate_hash": "575d081b4ba0fe28bcfba15159cc664c2a977644"
+          }
+        },
+        {
+          "client_id": "138751974185-5folbn5rtjvl8if8bn09tu7j752gg370.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwF9cYmQ7bSivJWQvJkdhqwl9HuoWo8Qw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138751974185-5folbn5rtjvl8if8bn09tu7j752gg370.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
