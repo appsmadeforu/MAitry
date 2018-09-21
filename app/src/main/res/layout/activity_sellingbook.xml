@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".sellingbook">
 
+
+
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,38 +18,52 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Enter your Details"
+            android:text="Enter Books Details"
             android:textSize="24sp" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Phone No"
-            android:inputType="number"
-            android:layout_marginTop="10dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Subject"
+            android:hint="BookName"
+            android:id="@+id/bkname"
             android:inputType="text"
             android:layout_marginTop="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Price"
+            android:hint="Subject"
+            android:id="@+id/sub"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SalePrice"
+            android:id="@+id/sale"
             android:inputType="number"
             android:layout_marginTop="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Year of Publication"
+            android:id="@+id/yer"
             android:inputType="number"
             android:layout_marginTop="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Description"
+            android:id="@+id/des"
             android:inputType="textMultiLine"
             android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="submit" />
     </android.support.v7.widget.LinearLayoutCompat>
 
 </LinearLayout>

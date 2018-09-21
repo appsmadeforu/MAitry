@@ -13,7 +13,7 @@
     >
 
     <Button
-        android:id="@+id/buybook"
+        android:id="@+id/sellbook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"
@@ -22,7 +22,7 @@
         android:text="sell book" />
 
     <Button
-        android:id="@+id/sellbook"
+        android:id="@+id/pubook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="25dp"

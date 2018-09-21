@@ -32,6 +32,10 @@ public class regesteration extends AppCompatActivity {
              String id=db.push().getKey();
            Art aa=new Art(id,e1.getText().toString().trim(),e2.getText().toString().trim(),e3.getText().toString().trim());
             db.child(id).setValue(aa);
+            e1.setText("");
+            e2.setText("");
+            e3.setText("");
+
             }
         });
     }

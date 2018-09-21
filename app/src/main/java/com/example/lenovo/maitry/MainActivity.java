@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     int flag=0;
     String abc;
     Intent i,i1;
+    String ph;
     DatabaseReference database;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                                    if(art.getPass().equals(passwor.getText().toString()))
                                    {
                                         flag=1;
+                                       ph= art.getPhone();
                                    }
                                 }
                                 /*String booksValue =   ds1.getValue().toString();
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
                             i = new Intent(MainActivity.this,trans.class);
                             i.putExtra("USER", uname.getText().toString());
+                            i.putExtra("phoneno",ph);
                             startActivity(i);
                          //   String abc=database.getValue();
                         }
