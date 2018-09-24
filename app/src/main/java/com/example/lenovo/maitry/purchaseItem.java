@@ -59,7 +59,7 @@ public class purchaseItem extends AppCompatActivity {
          MenuInflater inflater= getMenuInflater();
          inflater.inflate(R.menu.menu_search,menu);
          MenuItem item=menu.findItem(R.id.menuSearch);
-         SearchView searchView =(SearchView) item.getActionView();
+         SearchView searchView=(SearchView) item.getActionView();
          searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
              @Override
              public boolean onQueryTextSubmit(String s) {

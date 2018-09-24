@@ -1,6 +1,7 @@
 package com.example.lenovo.maitry;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -36,23 +37,39 @@ public class BooksLists extends ArrayAdapter<Book> {
         }
         return subjectDataFilter;
     }
-    
-
 
 
             @NonNull
             @Override
             public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-                LayoutInflater inflater = context.getLayoutInflater();
-                View listviewitem = inflater.inflate(R.layout.list_layout, null, true);
-                TextView textViewB = listviewitem.findViewById(R.id.textViewBookName);
-                TextView textViewp = listviewitem.findViewById(R.id.textView2phone);
-                TextView textViewn = listviewitem.findViewById(R.id.textView3uname);
+                ViewHolder holder = null;
+
+
+                if (convertView == null) {
+
+                    LayoutInflater vi = (LayoutInflater)getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+                    convertView = vi.inflate(R.layout.list_layout, null);
+
+                    holder = new ViewHolder();
+
+                    holder.Bookname = (TextView) convertView.findViewById(R.id.textViewBookName);
+
+                    holder.Phoneno = (TextView) convertView.findViewById(R.id.textView2phone);
+
+                    holder.PersonNAme = (TextView) convertView.findViewById(R.id.textView3uname);
+                    convertView.setTag(holder);
+
+                }
+                else {
+                    holder = (ViewHolder) convertView.getTag();
+                }
+
                 Book book = bklist.get(position);
-                textViewB.setText(book.getBookname());
-                textViewn.setText(book.getUname());
-                textViewp.setText(book.getPhno());
-                return listviewitem;
+                holder.Bookname.setText(book.getBookname());
+                holder.PersonNAme.setText(book.getUname());
+                holder.Phoneno.setText(book.getPhno());
+                return convertView;
             }
 
 
@@ -103,6 +120,12 @@ public class BooksLists extends ArrayAdapter<Book> {
 
             notifyDataSetInvalidated();
         }
+    }
+
+    private class ViewHolder {
+        TextView Bookname;
+        TextView Phoneno;
+        TextView  PersonNAme;
     }
 }
 
