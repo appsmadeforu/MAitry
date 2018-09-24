@@ -13,6 +13,16 @@ public class Book {
     public Book() {
     }
 
+    public Book(String uname, String phno, String bookname) {
+        this.uname = uname;
+        this.phno = phno;
+        this.bookname = bookname;
+    }
+    @Override
+    public final String toString(){
+        return bookname;
+    }
+
     public Book(String bid, String uname, String phno, String bookname, String sub, String year, String price, String des) {
         this.bid = bid;
         this.uname = uname;
